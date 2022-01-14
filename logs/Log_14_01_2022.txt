@@ -1,4 +1,0 @@
-00:55:58 ::: __enter__
-00:56:36 ::: __enter__
-00:57:09 ::: 'SendMail' object has no attribute 'confi_mail'
-00:57:30 ::: 'tuple' object has no attribute 'login'

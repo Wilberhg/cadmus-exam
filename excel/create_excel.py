@@ -29,20 +29,3 @@ class CreateExcel:
 
     def save_excel(self):
         self.wb.close()
-            
-if __name__ == '__main__':
-    list_datas = [
-        ['A', 'AGRICULTURA, PECUÁRI...QÜICULTURA', '01', 'AGRICULTURA, PECUÁRI...LACIONADOS', '01.5', 'Pecuária', '01.54-7', 'Criação de suínos', '0154-7/00', 'Criação de suínos'],
-        ['A', 'AGRICULTURA, PECUÁRI...QÜICULTURA', '01', 'AGRICULTURA, PECUÁRI...LACIONADOS', '01.5', 'Pecuária', '01.55-5', 'Criação de aves', '0155-5/01', 'Criação de frangos para corte'],
-        ['A', 'AGRICULTURA, PECUÁRI...QÜICULTURA', '01', 'AGRICULTURA, PECUÁRI...LACIONADOS', '01.5', 'Pecuária', '01.55-5', 'Criação de aves', '0155-5/02', 'Produção de pintos de um dia'],
-        ['A', 'AGRICULTURA, PECUÁRI...QÜICULTURA', '01', 'AGRICULTURA, PECUÁRI...LACIONADOS', '01.5', 'Pecuária', '01.55-5', 'Criação de aves', '0155-5/03', 'Criação de outros ga...para corte'],
-        ['A', 'AGRICULTURA, PECUÁRI...QÜICULTURA', '01', 'AGRICULTURA, PECUÁRI...LACIONADOS', '01.5', 'Pecuária', '01.55-5', 'Criação de aves', '0155-5/04', 'Criação de aves, exc...galináceos'],
-        ['A', 'AGRICULTURA, PECUÁRI...QÜICULTURA', '01', 'AGRICULTURA, PECUÁRI...LACIONADOS', '01.5', 'Pecuária', '01.55-5', 'Criação de aves', '0155-5/05', 'Produção de ovos']
-        ]
-
-    obj =  CreateExcel()
-    obj.set_sheet_name()
-    obj.set_headers()
-    obj.write_lines(list_datas)
-    obj.save_excel()
-    ...
